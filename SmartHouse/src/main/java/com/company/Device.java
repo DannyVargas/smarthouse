@@ -1,10 +1,16 @@
 package com.company;
 import java.util.Observable;
 import java.util.Observer;
-public class Display implements Observer{
+public class Device implements Observer{
+    String name;
+    public Device(String name) {
+        this.name=name;
+
+    }
+
     public void update(Observable o, Object arg) {
         Integer value = (Integer) arg;
-        showValue(value); // Mostramos el valor
+        showValue(value);
     }
     private void showValue(int value){
         System.out.println("New Value = " + value);

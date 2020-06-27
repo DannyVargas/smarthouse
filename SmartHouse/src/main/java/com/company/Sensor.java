@@ -14,11 +14,13 @@ public class Sensor extends Observable{
     {
 
     }
-
     public void setValue(int value){
         this.value = value;
         setChanged();
         notifyObservers(this.value);
+    }
+    public String getName(){
+        return this.name;
     }
 
 }
