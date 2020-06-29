@@ -22,5 +22,8 @@ public class Sensor extends Observable{
     public String getName(){
         return this.name;
     }
+    public int getValue(){
+        return this.value;
+    }
 
 }
